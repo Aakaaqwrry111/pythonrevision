@@ -17,4 +17,24 @@ print(a)
 a.insert(1,"tsk")  
 print(a)
 #list.insert(index,)
-help(list)
+#help(list.insert)
+#insert(self, index, object, /)
+l=[1,2,3,4,5,6,7]
+for i in range(len(l)):
+    if l[i]>0:
+        print(l[i])
+sum=0
+total_elements=0
+for i in range(len(l)):
+    sum+=l[i]
+
+print(sum)
+print(i+1)
+average=sum/(i+1)
+print(f"The average is {average}")
+largest=l[0]
+for i in range(len(l)):
+    if l[i]>largest:
+        largest=l[i]
+        index=i
+print(f"The largest number is {largest} and the index is {i} ")
