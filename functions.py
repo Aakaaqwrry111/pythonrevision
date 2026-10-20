@@ -14,7 +14,8 @@ def palindrome(string):
         return True
     else:
         return False
-print(palindrome("naman"))
+print(palindrome("naman"))#This is how we return any value from function
+
         
     
 

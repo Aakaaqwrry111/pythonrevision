@@ -19,7 +19,7 @@ print(a)
 #list.insert(index,)
 #help(list.insert)
 #insert(self, index, object, /)
-l=[1,2,3,4,5,6,7]
+l=[1,2,30,4,454,6,7]
 for i in range(len(l)):
     if l[i]>0:
         print(l[i])
@@ -33,8 +33,19 @@ print(i+1)
 average=sum/(i+1)
 print(f"The average is {average}")
 largest=l[0]
+second_largest=l[0]
 for i in range(len(l)):
     if l[i]>largest:
         largest=l[i]
         index=i
+for j in range(len(l)):
+    if l[index]!=l[j]:
+        if l[j]>second_largest:
+            second_largest=l[j]
+            index_1=j
+
+            
 print(f"The largest number is {largest} and the index is {i} ")
+print(f"The second largest number is {second_largest} and the index is {index_1}")
+
+
