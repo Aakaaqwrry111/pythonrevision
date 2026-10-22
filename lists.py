@@ -44,8 +44,18 @@ for j in range(len(l)):
             second_largest=l[j]
             index_1=j
 
+
             
 print(f"The largest number is {largest} and the index is {i} ")
 print(f"The second largest number is {second_largest} and the index is {index_1}")
-
+#A program to check if a list is sorted or not 
+sl=[2,5,4,7,9]
+for k in range(len(sl)):
+    if sl[k]<sl[k+1]:
+        continue
+    else:
+        print("Your list is not sorted")
+        break
+else:
+    print("Your list is sorted")
 
